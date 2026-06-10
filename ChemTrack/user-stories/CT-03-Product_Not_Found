@@ -1,0 +1,9 @@
+As a staff processing orders,
+I want the system to clearly indicate when a product name I typed does not exist in the master inventory,
+so that I can check for typos or ask the owner to add the product.
+
+Acceptance Criteria:
+
+    Given I enter a product name not found in Master Inventory, When I move to the next row, Then the Unit Price field displays “Product Not Found” and a flag appears.
+
+    Given the row is flagged as not found, When I correct the product name to a valid one, Then the error message clears and price lookup runs again.
